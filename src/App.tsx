@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+import { TopBar, Content, Footer } from "./components";
+
+import "./App.css";
+
+export const TABS = {
+  HOMEPAGE: "Homepage",
+  FIRST_TASK: "First task",
+  SECOND_TASK: "Second task",
+  THIRD_TASK: "Third task",
+  FOURTH_TASK: "Fourth task",
+  FIFTH_TASK: "Fifth task",
+  SIXTH_TASK: "Sixth task",
+};
+
+export default function App() {
+  const [activeTab, switchTab] = useState(TABS.HOMEPAGE);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <TopBar switchTab={switchTab} activeTab={activeTab} />
+      <Content activeTab={activeTab} />
+      <Footer />
     </div>
   );
 }
-
-export default App;
