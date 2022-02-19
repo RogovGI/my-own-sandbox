@@ -1,0 +1,24 @@
+.common-button {
+  min-width: fit-content;
+  max-width: max-content;
+  padding: 3px 12px;
+  border-radius: 5px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: lightslategray;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.common-button:hover {
+  background-color: steelblue;
+}
+
+.disabled {
+  opacity: 0.7;
+  cursor: default;
+  pointer-events: none;
+}

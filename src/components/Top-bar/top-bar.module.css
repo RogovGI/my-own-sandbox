@@ -1,0 +1,25 @@
+.top-bar {
+  display: flex;
+  background-color: #85929e;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.top-bar-item {
+  border-radius: 0px !important;
+  background-color: inherit;
+}
+.top-bar-item:hover {
+  color: steelblue;
+  background-color: inherit;
+}
+
+.top-bar-item-active {
+  background-color: steelblue;
+  cursor: default;
+  pointer-events: none;
+}

@@ -1,0 +1,18 @@
+.matrix-elem-textfield {
+  width: 90px;
+}
+
+.matrix-elem-textfield-label {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.matrix {
+  display: flex;
+  justify-content: center;
+}

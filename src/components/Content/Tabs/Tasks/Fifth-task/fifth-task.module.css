@@ -1,0 +1,4 @@
+.analytic-result-block {
+  display: flex;
+  flex-direction: column;
+}

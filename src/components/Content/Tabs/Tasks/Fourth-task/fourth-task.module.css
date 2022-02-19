@@ -1,0 +1,19 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.button-margin {
+  margin: 5px;
+}
+
+.array-result-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.array-result-box-column {
+  margin: 5px;
+}

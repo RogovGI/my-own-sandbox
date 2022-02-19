@@ -1,0 +1,11 @@
+.footer {
+  width: 100vw;
+  background-color: #85929e;
+  padding: 5px 0px;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
